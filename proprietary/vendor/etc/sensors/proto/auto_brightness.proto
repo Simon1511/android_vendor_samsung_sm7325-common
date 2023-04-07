@@ -1,0 +1,44 @@
+// @file sns_auto_brightness.proto
+//
+// Defines standard message types for the AUTO_BRIGHTNESS
+//
+// Copyright (c) 2017 Samsung Electronics, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Samsung Electronics, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+enum auto_brightness_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_AUTO_BRIGHTNESS_MSGID_SNS_STD_SENSOR_CONFIG = 512;
+  SNS_AUTO_BRIGHTNESS_MSGID_SNS_SEND_CONTEXT_DATA = 700;
+  SNS_AUTO_BRIGHTNESS_MSGID_SNS_AUTO_BRIGHTNESS_DATA = 1025;
+}
+
+message algo_auto_brightness_config
+{
+  required float sample_rate = 1;
+  required int32 test = 2 [default = 10];
+}
+
+message auto_brightness_data
+{
+  required sns_std_sensor_sample_status accuracy = 1;
+  optional bytes output = 2;
+}
+
+message auto_brightness_data_event
+{
+  repeated int32 events = 1;
+}
+
+message auto_brightness_send_data
+{
+  required float sample_rate = 1;
+  required int32 data_value = 2;
+  optional bytes data_t = 3;
+}

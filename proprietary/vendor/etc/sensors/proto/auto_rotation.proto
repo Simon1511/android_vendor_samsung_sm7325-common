@@ -1,0 +1,33 @@
+// @file sns_auto_rotation.proto
+//
+// Defines standard message types for the AUTO_ROTATION
+//
+// Copyright (c) 2017 Samsung Electronics, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Samsung Electronics, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+enum auto_rotation_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_AUTO_ROTATION_MSGID_SNS_STD_SENSOR_CONFIG = 512;
+  SNS_AUTO_ROTATION_MSGID_SNS_AUTO_ROTATION_DATA = 1025;
+}
+
+message algo_auto_rotataion_config
+{
+  required float sample_rate = 1;
+  required int32 test = 2 [default = 10];
+}
+
+message auto_rotation_data
+{
+  repeated float output = 1;
+  required sns_std_sensor_sample_status accuracy = 2;
+}
+
+

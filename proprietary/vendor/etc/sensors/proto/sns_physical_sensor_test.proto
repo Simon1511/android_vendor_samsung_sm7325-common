@@ -1,0 +1,174 @@
+// @file sns_physical_sensor_test.proto
+//
+// Defines test API message types for physical sensors.
+//
+// All physical Sensor drivers are required to use this API to support
+// self-test. SNS_PHYSICAL_SENSOR_TEST_TYPE_COM is a mandatory test type and must be
+// implemented in all physical Sensor drivers. Any new or device-specific
+// test type may be defined in the Sensor-specific API.
+//
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+
+enum sns_physical_sensor_test_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Test config request to a physical Sensor
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_CONFIG = 515;
+
+  // Test reqeust for factory raw data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_RAW_DATA_REQ = 600;
+
+  // Test reqeust for factory selftest data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SELF_TEST_REQ = 601;
+
+  // Test reqeust for factory accel lpf test
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_LPF_REQ = 602;
+
+  // Test reqeust for factory accel motor test
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_MOTOR_REQ = 603;
+
+  // Test reqeust for factory get threshold
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_THD_REQ = 604;
+
+  // Test reqeust for factory set threshold
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_THD_REQ = 605;
+
+  // Test reqeust for factory set hidden hole data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_HH_DATA_REQ = 606;
+
+  // Test reqeust for factory get register
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_REG_REQ = 607;
+
+  // Test reqeust for factory set register
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_REG_REQ = 608;
+
+  // Test reqeust for factory get dump registers
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_DUMP_REG_REQ = 609;
+
+  // Test reqeust for factory get cal data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_CAL_DATA_REQ = 610;
+
+  // Test reqeust for factory set cal data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_CAL_DATA_REQ = 611;
+
+  // Test reqeust for factory get dhr
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_DHR_REQ = 612;
+
+  // Test reqeust for factory enable
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_FACTORY_ENABLE_REQ = 613;
+
+  // Test reqeust for factory disable
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_FACTORY_DISABLE_REQ = 614;
+
+  // Test event for factory raw data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_RAW_DATA_EVENT = 700;
+
+  // Test event for factory selftest data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SELF_TEST_EVENT = 701;
+
+  // Test event for factory accel lpf data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_LPF_EVENT = 702;
+
+  // Test event for factory accel motor data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_MOTOR_EVENT = 703;
+
+  // Test event for factory get threshold
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_THD_EVENT = 704;
+
+  // Test event for factory set threshold
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_THD_EVENT = 705;
+
+  // Test event for factory set hidden hole data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_HH_DATA_EVENT = 706;
+
+  // Test event for factory get register
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_REG_EVENT = 707;
+
+  // Test event for factory set register
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_REG_EVENT = 708;
+
+  // Test event for factory get dump registers
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_DUMP_REG_EVENT = 709;
+
+  // Test event for factory get cal data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_CAL_DATA_EVENT = 710;
+
+  // Test event for factory set cal data
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_SET_CAL_DATA_EVENT = 711;
+
+  // Test event for factory get dhr
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_GET_DHR_EVENT = 712;
+
+  // Test event for factory enable
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_FACTORY_ENABLE_EVENT = 713;
+
+  // Test event for factory disable
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_FACTORY_DISABLE_EVENT = 714;
+
+  // Test event message from a physical Sensor
+  SNS_PHYSICAL_SENSOR_TEST_MSGID_SNS_PHYSICAL_SENSOR_TEST_EVENT  = 1026;
+}
+
+// Supported test types for physical sensors
+enum sns_physical_sensor_test_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Software test.
+  SNS_PHYSICAL_SENSOR_TEST_TYPE_SW = 0;
+
+  // Sensor Hardware test.
+  SNS_PHYSICAL_SENSOR_TEST_TYPE_HW = 1;
+
+  // Factory test used for Sensor calibration.
+  SNS_PHYSICAL_SENSOR_TEST_TYPE_FACTORY = 2;
+
+  // Communication bus test.
+  SNS_PHYSICAL_SENSOR_TEST_TYPE_COM = 3;
+
+  // factory for SS
+  SNS_PHYSICAL_SENSOR_TEST_TYPE_SS = 4;
+}
+
+// Physical Sensor test configuration request
+message sns_physical_sensor_test_config
+{
+  // Requested test type.
+  required sns_physical_sensor_test_type test_type = 1;
+  optional bytes data = 2;
+}
+
+// Physical Sensor test event
+message sns_physical_sensor_test_event
+{
+  // Result if the test execution was successful:
+  // true for success
+  // false for failure
+  required bool test_passed = 1 [default = true];
+
+  // test_type from sns_physical_sensor_test_config that
+  // this event corresponds to
+  required sns_physical_sensor_test_type test_type = 2 [default = SNS_PHYSICAL_SENSOR_TEST_TYPE_COM];
+
+  // Driver specific test data. This field can be used
+  // to pass additional information like failure codes, debug data, etc.
+  optional bytes test_data = 3;
+}
+
+// Self-test and streaming concurrency requirements:
+// 1. If the sensor is streaming and there is a client request to run
+//    self-test (any test type) then the driver:
+//      a. Pauses the stream
+//      b. Executes the self-test request to completion
+//      c. Resumes stream
+// 2. If the self-test is running and there is a client request to start
+//    a sensor stream then the driver:
+//      a. Rejects the stream request
+//      b. Continues executing the self-test request to completion
+

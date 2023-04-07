@@ -1,0 +1,42 @@
+// @file activities.proto
+//
+// Defines standard message types for the ACTIVITIES
+//
+// Copyright (c) 2017 Samsung Electronics, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Samsung Electronics, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+enum activities_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_ACTIVITIES_MSGID_SNS_STD_SENSOR_CONFIG = 512;
+  SNS_ACTIVITIES_MSGID_SNS_SEND_CONTEXT_DATA = 700;
+  SNS_ACTIVITIES_MSGID_SNS_ACTIVITIES_DATA = 1025;
+}
+
+message algo_activities_config
+{
+  required float sample_rate = 1;
+  required int32 test = 2 [default = 10];
+}
+
+message activities_send_context_data
+{
+  required float sample_rate = 1;
+  required int32 data_size = 2;
+  optional bytes data = 3;
+}
+
+message activities_event
+{
+  required int32 total_size = 1;
+  required int32 curr_size = 2;
+  required int32 index = 3;
+  required int32 number = 4;
+  optional bytes data = 5;
+}

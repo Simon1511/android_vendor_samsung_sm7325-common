@@ -1,0 +1,45 @@
+// @file std_ss_algo.proto
+//
+// Defines standard message types for the ACTIVITIES
+//
+// Copyright (c) 2017 Samsung Electronics, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Samsung Electronics, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+enum std_ss_algo_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_STD_SS_ALGO_MSGID_SNS_STD_SENSOR_CONFIG = 512;
+  SNS_STD_SS_ALGO_MSGID_SNS_SEND_CONTEXT_DATA = 700;
+  SNS_STD_SS_ALGO_MSGID_SNS_STD_SS_ALGO_EVENT = 1025;
+}
+
+message std_ss_algo_config
+{
+  required float sample_rate = 1;
+  required int32 test = 2 [default = 10];
+}
+
+message std_ss_algo_send_context_data
+{
+  required float sample_rate = 1;
+  required int32 data_size = 2;
+  optional bytes data = 3;
+}
+
+message std_ss_algo_event_data
+{
+  repeated int32 events = 1;
+}
+
+message std_ss_algo_event
+{
+  required float sample_rate = 1;
+  required int32 data_size = 2;
+  optional bytes data = 3;
+}
