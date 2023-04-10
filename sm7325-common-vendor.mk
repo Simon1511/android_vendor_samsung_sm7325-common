@@ -145,7 +145,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
-    vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/proto/activities.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/activities.proto \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/proto/auto_brightness.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/auto_brightness.proto \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/proto/auto_rotation.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/auto_rotation.proto \
