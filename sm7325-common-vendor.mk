@@ -67,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
-    vendor/samsung/sm7325-common/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/init/ipacm-diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm-diag.rc \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
@@ -309,6 +308,70 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b04 \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.elf \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b05 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b06 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b07 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.elf \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b05 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b06 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b07 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.elf \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b05 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b06 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b07 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.elf \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b05 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b06 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b07 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.mdt \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b00 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b01 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b02 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b03 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b04 \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.elf \
+    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.mdt \
     vendor/samsung/sm7325-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/samsung/sm7325-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/samsung/sm7325-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
