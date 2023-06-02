@@ -118,7 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/config/kodiak_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_ak991x_0.json \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/config/kodiak_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_default_sensors.json \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/samsung/sm7325-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
@@ -287,91 +286,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/msnv11.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/msnv11.bin \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/multical.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/multical.bin \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/nfc/sec_s3nrn4v_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn4v_firmware.bin \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/qca6750/bdwlan.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6750/bdwlan.elf \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/qca6750/bdwlan.elf10:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6750/bdwlan.elf10 \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/qca6750/qdss_trace_config.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6750/qdss_trace_config.cfg \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/qca6750/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6750/regdb.bin \
     vendor/samsung/sm7325-common/proprietary/vendor/firmware/wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/qca6750/WCNSS_qcom_cfg.ini \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b05 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b06 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b07 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.elf \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b05 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b06 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.b07 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/wpss.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.elf \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev1/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev1/yupik_ipa_fws.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b05 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b06 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.b07 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/wpss.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.elf \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528b/rev2/yupik_ipa_fws.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b05 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b06 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.b07 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/wpss.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.elf \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev1/yupik_ipa_fws.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b05 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b06 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.b07 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/wpss.mdt \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b00 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b01 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b02 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b03 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.b04 \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.elf \
-    vendor/samsung/sm7325-common/proprietary/vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa/a528n/rev2/yupik_ipa_fws.mdt \
     vendor/samsung/sm7325-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/samsung/sm7325-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/samsung/sm7325-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
@@ -379,29 +296,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.chiusecaseselector.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.anchorsync.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.demux.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.derivedoffline.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.derivedoffline.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.frameselect.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.fusion.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.generic.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.gs.kodiak.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.gs.kodiak.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.gs.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.gs.sm8350.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.hdr.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mcreprocrt.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.memcpy.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mfsr.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.ml.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.mux.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.mux.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.qcfa.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rawhdr.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.realtimeserializer.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rt.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.rtmcx.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.serializer.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.statsregeneration.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.statsregeneration.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.stub.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.feature2.swmf.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.settings.kamorta.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.settings.kamorta.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.settings.kodiak.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.settings.kodiak.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/com.qti.settings.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qti.settings.mannar.so \
@@ -417,7 +311,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/hw/audio.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.lahaina.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/hw/camera.unihal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.unihal.default.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.lahaina.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
@@ -522,7 +415,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_image.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libexifa.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexifa.camera.samsung.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexthwplugin.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libface_landmark.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libface_landmark.arcsoft.so \
@@ -549,7 +441,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libhigh_dynamic_range_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhigh_dynamic_range_bokeh.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_core.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_interface.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libimage_enhancement.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimage_enhancement.arcsoft.so \
@@ -655,7 +546,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/libsec2qc_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec2qc_conversion.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudiocoreutils.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
@@ -676,7 +566,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libsocial_image_enhancement.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsocial_image_enhancement.uniplugin@1.0.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspatializerparamstorage.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeakercalibration.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
@@ -725,8 +614,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v68_domains_v3_skel.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
@@ -778,29 +665,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.derivedoffline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.derivedoffline.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.frameselect.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.fusion.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.generic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.generic.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.gs.kodiak.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.kodiak.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.gs.sm8350.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.gs.sm8350.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.hdr.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.mcreprocrt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mcreprocrt.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.memcpy.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.mfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mfsr.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.ml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.ml.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.mux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.mux.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.qcfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.qcfa.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.rawhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rawhdr.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.realtimeserializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.realtimeserializer.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rt.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.rtmcx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.rtmcx.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.serializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.serializer.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.statsregeneration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.statsregeneration.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.settings.kamorta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.kamorta.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.settings.kodiak.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.kodiak.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/com.qti.settings.mannar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.settings.mannar.so \
@@ -912,8 +776,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_video.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengmode_client.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libexifa.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexifa.camera.samsung.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libface_landmark.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libface_landmark.arcsoft.so \
@@ -938,7 +800,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libhandgesture.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhandgesture.arcsoft.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libhigh_dynamic_range_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhigh_dynamic_range_bokeh.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_core.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_interface.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypervintf.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
@@ -1051,7 +912,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril-dsds.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/libsec2qc_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec2qc_conversion.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiocoreutils.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudioinfo.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so \
@@ -1100,8 +960,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
