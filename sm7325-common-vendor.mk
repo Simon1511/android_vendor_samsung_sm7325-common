@@ -322,7 +322,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libDualCamBokehCapture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDualCamBokehCapture.camera.samsung.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFacePreProcessing.camera.samsung.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libFace_Landmark_API.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFace_Landmark_API.camera.samsung.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
@@ -627,8 +626,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/soundfx/libswspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswspatializer.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/spatializer-aidl-V1-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/spatializer-aidl-V1-cpp.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/unihal_cutils@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/unihal_cutils@2.1.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib/unihal_main@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/unihal_main@2.1.so \
+    vendor/samsung/sm7325-common/proprietary/vendor/lib/unihal_cutils@2.15.so:$(TARGET_COPY_OUT_VENDOR)/lib/unihal_cutils@2.15.so \
+    vendor/samsung/sm7325-common/proprietary/vendor/lib/unihal_main@2.15.so:$(TARGET_COPY_OUT_VENDOR)/lib/unihal_main@2.15.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/unihal_uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/unihal_uniplugin@1.0.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
@@ -696,7 +695,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libDLInterface.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDLInterface.camera.samsung.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libDualCamBokehCapture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDualCamBokehCapture.camera.samsung.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacePreProcessing.camera.samsung.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libFace_Landmark_API.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace_Landmark_API.camera.samsung.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
@@ -976,8 +974,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/soundfx/libswspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswspatializer.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/spatializer-aidl-V1-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/spatializer-aidl-V1-cpp.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/unihal_cutils@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_cutils@2.1.so \
-    vendor/samsung/sm7325-common/proprietary/vendor/lib64/unihal_main@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_main@2.1.so \
+    vendor/samsung/sm7325-common/proprietary/vendor/lib64/unihal_cutils@2.15.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_cutils@2.15.so \
+    vendor/samsung/sm7325-common/proprietary/vendor/lib64/unihal_main@2.15.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_main@2.15.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/unihal_uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_uniplugin@1.0.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/samsung/sm7325-common/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
